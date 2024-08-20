@@ -8,7 +8,7 @@ const iceCream = [
   { name: 'Sprinkles', price: 0.25, quantity: 0, type: 'topping' },
   { name: 'Chocolate Chips', price: 0.25, quantity: 0, type: 'topping' },
   { name: 'Chocolate Syrup', price: 0.25, quantity: 0, type: 'topping' },
-  { name: 'Oreos', price: 0.50, quantity: 0, type: 'topping' },
+  { name: 'Oreo', price: 0.50, quantity: 0, type: 'topping' },
   { name: "Reese's Peanut Butter Cups", price: 0.50, quantity: 0, type: 'topping' },
   { name: "M&M's", price: 0.50, quantity: 0, type: 'topping' },
   { name: "Sugar Cone", price: 0.75, quantity: 0, type: 'container' },
@@ -29,21 +29,61 @@ function addItem(selectedItem, selectedType) {
   }
 
 
-  drawOrder(selectedType)
+  drawOrder()
 }
 
 function calcTotal() {
-
+  let total = 0;
+  for (let i = 0; i < iceCream.length; i++) {
+    let item = iceCream[i];
+    if (item.quantity > 0) {
+      total += (item.quantity * item.price);
+    }
+  }
+  return total;
 }
 
-function drawOrder(selectedType) {
-  // for (let i = 0; i < iceCream.length; i++) {
-  //   if (selectedType == "scoop") {
+function drawOrder() {
+  let orderElem = document.getElementById("orderItems");
+  let totalElem = document.getElementById("total")
+  let orderCont = "";
+  let scoopCont = grabScoops();
+  let toppingCont = grabToppings();
+  let containerCont = grabContainers();
+  orderCont = scoopCont + toppingCont + containerCont;
+  orderElem.innerHTML = orderCont;
+  totalElem.innerText = (calcTotal()).toFixed(2);
+}
 
-  //   } else if (selectedType == "topping") {
+function grabScoops() {
+  let orderCont = "";
+  for (let i = 0; i < iceCream.length; i++) {
+    let item = iceCream[i]
+    if (item.type == "scoop" & item.quantity > 0) {
+      orderCont += `<p>${item.quantity}x ${item.name} Scoop $${(item.price * item.quantity).toFixed(2)}</p>`
+    }
+  }
+  return orderCont;
+}
 
-  //   } else {
+function grabToppings() {
+  let orderCont = "";
+  for (let i = 0; i < iceCream.length; i++) {
+    let item = iceCream[i]
+    if (item.type == "topping" & item.quantity > 0) {
+      orderCont += `<p>${item.quantity}x ${item.name} Topping $${(item.price * item.quantity).toFixed(2)}</p>`
+    }
+  }
+  return orderCont;
+}
 
-  //   }
-  // }
+function grabContainers() {
+  let orderCont = "";
+  for (let i = 0; i < iceCream.length; i++) {
+    let item = iceCream[i]
+    if (item.type == "container" & item.quantity > 0) {
+      orderCont += `<p>${item.quantity}x ${item.name} $${(item.price * item.quantity).toFixed(2)}</p>`
+    }
+  }
+  return orderCont;
 }

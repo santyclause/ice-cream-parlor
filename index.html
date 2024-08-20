@@ -8,6 +8,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,15 +18,16 @@
   <main>
     <section class="row">
       <!-- SECTION Items-->
-      <div class="col-md-6">
-        <section class="row v-space">
+      <div class="col-md-8">
+        <section class="row">
           <!-- NOTE Flavors -->
           <div class="col-12">
             <h1>Flavors</h1>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="item-card text-center justify-content-center h-100"><img src="" class="img-fluid"
-                alt="image of ">
+          <div class="col-12 col-sm-6 col-lg-4 v-space">
+            <div class="item-card text-center justify-content-center h-100"><img
+                src="https://99easyrecipes.com/wp-content/uploads/2017/03/Old-Fashioned-Vanilla-Ice-Cream.jpg"
+                class="img-fluid" alt="image of vanilla">
               <h3>Vanilla</h3>
               <p>$1.00</p>
               <div class="d-flex btn-contain align-items-end justify-content-center">
@@ -31,51 +35,56 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="item-card text-center justify-content-center h-100"><img src="" class="img-fluid"
-                alt="image of ">
+          <div class="col-12 col-sm-6 col-lg-4 v-space">
+            <div class="item-card text-center justify-content-center h-100"><img
+                src="https://th.bing.com/th/id/OIP.WRnsU_WAypIRRikPVk_7wQAAAA?rs=1&pid=ImgDetMain" class="img-fluid"
+                alt="image of chocolate">
               <h3>Chocolate</h3>
-              <p>$1.00</p>
+              <p>$1.25</p>
               <div class="d-flex btn-contain align-items-end justify-content-center">
                 <button onclick="addItem('Chocolate', 'scoop')" class="btn btn-primary">Add to Order</button>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="item-card text-center justify-content-center h-100"><img src="" class="img-fluid"
-                alt="image of ">
+          <div class="col-12 col-sm-6 col-lg-4 v-space">
+            <div class="item-card text-center justify-content-center h-100"><img
+                src="https://vintagekitchennotes.com/wp-content/uploads/2020/01/Strawberry-ice-cream-10..jpg"
+                class="img-fluid" alt="image of strawberry">
               <h3>Strawberry</h3>
-              <p>$1.00</p>
+              <p>$1.25</p>
               <div class="d-flex btn-contain align-items-end justify-content-center">
                 <button onclick="addItem('Strawberry', 'scoop')" class="btn btn-primary">Add to Order</button>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="item-card text-center justify-content-center h-100"><img src="" class="img-fluid"
-                alt="image of ">
+          <div class="col-12 col-sm-6 col-lg-4 v-space">
+            <div class="item-card text-center justify-content-center h-100"><img
+                src="https://media1.popsugar-assets.com/files/thumbor/Y6YDzZaGJkmv-TS9SPYTmeFSA-E/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2011/07/27/5/192/1922195/25faae55fb58412d_DSC_0062/i/Rocky-Road-Ice-Cream-Recipe.jpg"
+                class="img-fluid" alt="image of rocky road">
               <h3>Rocky Road</h3>
-              <p>$1.00</p>
+              <p>$1.50</p>
               <div class="d-flex btn-contain align-items-end justify-content-center">
                 <button onclick="addItem('Rocky Road', 'scoop')" class="btn btn-primary">Add to Order</button>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="item-card text-center justify-content-center h-100"><img src="" class="img-fluid"
-                alt="image of ">
+          <div class="col-12 col-sm-6 col-lg-4 v-space">
+            <div class="item-card text-center justify-content-center h-100"><img
+                src="https://th.bing.com/th/id/OIP.mcWYCZLnsYXdZkNSKeAS4AHaHa?rs=1&pid=ImgDetMain" class="img-fluid"
+                alt="image of rainbow sherbet">
               <h3>Rainbow Sherbet</h3>
-              <p>$1.00</p>
+              <p>$1.50</p>
               <div class="d-flex btn-contain align-items-end justify-content-center">
                 <button onclick="addItem('Rainbow Sherbet', 'scoop')" class="btn btn-primary">Add to Order</button>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="item-card text-center justify-content-center h-100"><img src="" class="img-fluid"
-                alt="image of ">
+          <div class="col-12 col-sm-6 col-lg-4 v-space">
+            <div class="item-card text-center justify-content-center h-100"><img
+                src="https://thebusybaker.ca/wp-content/uploads/2019/07/mint-chocolate-chip-ice-cream-fb-ig-3.jpg"
+                class="img-fluid" alt="image of mint chocolate chip">
               <h3>Mint Chocolate Chip</h3>
-              <p>$1.00</p>
+              <p>$1.50</p>
               <div class="d-flex btn-contain align-items-end justify-content-center">
                 <button onclick="addItem('Mint Chocolate Chip', 'scoop')" class="btn btn-primary">Add to Order</button>
               </div>
@@ -87,62 +96,68 @@
           <div class="col-12">
             <h1>Toppings</h1>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="item-card text-center justify-content-center h-100"><img src="" class="img-fluid"
-                alt="image of ">
+          <div class="col-12 col-sm-6 col-lg-4 v-space">
+            <div class="item-card text-center justify-content-center h-100"><img
+                src="https://th.bing.com/th/id/OIP.211LkB2EV2jsk0mVzgKOvgAAAA?rs=1&pid=ImgDetMain" class="img-fluid"
+                alt="image of sprinkles">
               <h3>Sprinkles</h3>
-              <p>$1.00</p>
+              <p>$0.25</p>
               <div class="d-flex btn-contain align-items-end justify-content-center">
                 <button onclick="addItem('Sprinkles', 'topping')" class="btn btn-primary">Add to Order</button>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="item-card text-center justify-content-center h-100"><img src="" class="img-fluid"
-                alt="image of ">
+          <div class="col-12 col-sm-6 col-lg-4 v-space">
+            <div class="item-card text-center justify-content-center h-100"><img
+                src="https://th.bing.com/th/id/R.cc4e4d2ec62c1b5523950612a61fe254?rik=48twqO0An8Corg&riu=http%3a%2f%2fcdn2.tmbi.com%2fTOH%2fImages%2fPhotos%2f37%2f1200x1200%2fCinnamon-Chocolate-Chip-Ice-Cream_exps29313_CM2043886D08_11_1bC_RMS.jpg&ehk=Py%2bZwEaRdGHAvAEm6OYuZyF43wflfHdmkEycguPfZIY%3d&risl=&pid=ImgRaw&r=0"
+                class="img-fluid" alt="image of chocolate chips">
               <h3>Chocolate Chips</h3>
-              <p>$1.00</p>
+              <p>$0.25</p>
               <div class="d-flex btn-contain align-items-end justify-content-center">
                 <button onclick="addItem('Chocolate Chips', 'topping')" class="btn btn-primary">Add to Order</button>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="item-card text-center justify-content-center h-100"><img src="" class="img-fluid"
-                alt="image of ">
+          <div class="col-12 col-sm-6 col-lg-4 v-space">
+            <div class="item-card text-center justify-content-center h-100"><img
+                src="https://th.bing.com/th/id/OIP.WCQjmYUjNs7LJcXi_ynzuQHaG2?rs=1&pid=ImgDetMain" class="img-fluid"
+                alt="image of oreos">
               <h3>Oreo</h3>
-              <p>$1.00</p>
+              <p>$0.50</p>
               <div class="d-flex btn-contain align-items-end justify-content-center">
                 <button onclick="addItem('Oreo', 'topping')" class="btn btn-primary">Add to Order</button>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="item-card text-center justify-content-center h-100"><img src="" class="img-fluid"
-                alt="image of ">
+          <div class="col-12 col-sm-6 col-lg-4 v-space">
+            <div class="item-card text-center justify-content-center h-100"><img
+                src="https://th.bing.com/th/id/OIP.VWUHpuA_2yaDbYMe0KZgXwHaGM?rs=1&pid=ImgDetMain" class="img-fluid"
+                alt="image of chocolate syrup">
               <h3>Chocolate Syrup</h3>
-              <p>$1.00</p>
+              <p>$0.25</p>
               <div class="d-flex btn-contain align-items-end justify-content-center">
                 <button onclick="addItem('Chocolate Syrup', 'topping')" class="btn btn-primary">Add to Order</button>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="item-card text-center justify-content-center h-100"><img src="" class="img-fluid"
-                alt="image of ">
+          <div class="col-12 col-sm-6 col-lg-4 v-space">
+            <div class="item-card text-center justify-content-center h-100"><img
+                src="https://th.bing.com/th/id/OIP.TXqIi2wFyr-BX0gJXsSkJQAAAA?rs=1&pid=ImgDetMain" class="img-fluid"
+                alt="image of RPBC on ice cream">
               <h3>Reese's Peanut Butter Cups</h3>
-              <p>$1.00</p>
+              <p>$0.50</p>
               <div class="d-flex btn-contain align-items-end justify-content-center">
                 <button onclick="addItem(`Reese's Peanut Butter Cups`, 'topping')" class="btn btn-primary">Add to
                   Order</button>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="item-card text-center justify-content-center h-100"><img src="" class="img-fluid"
-                alt="image of ">
+          <div class="col-12 col-sm-6 col-lg-4 v-space">
+            <div class="item-card text-center justify-content-center h-100"><img
+                src="https://www.webstaurantstore.com/images/products/large/24892/2480964.jpg" class="img-fluid"
+                alt="image of m&ms">
               <h3>M&M's</h3>
-              <p>$1.00</p>
+              <p>$0.50</p>
               <div class="d-flex btn-contain align-items-end justify-content-center">
                 <button onclick="addItem(`M&M's`, 'topping')" class="btn btn-primary">Add to Order</button>
               </div>
@@ -154,19 +169,21 @@
           <div class="col-12">
             <h1>Cones + Bowls</h1>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="item-card text-center justify-content-center h-100"><img src="" class="img-fluid"
-                alt="image of ">
+          <div class="col-12 col-sm-6 col-lg-4 v-space">
+            <div class="item-card text-center justify-content-center h-100"><img
+                src="https://th.bing.com/th/id/R.c97ddcb8608d1b9e8925776e491f0cb3?rik=ANH%2fwk3%2bFoSuPg&pid=ImgRaw&r=0"
+                class="img-fluid" alt="image of a sugar cone">
               <h3>Sugar Cone</h3>
-              <p>$1.00</p>
+              <p>$0.75</p>
               <div class="d-flex btn-contain align-items-end justify-content-center">
                 <button onclick="addItem('Sugar Cone', 'container')" class="btn btn-primary">Add to Order</button>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="item-card text-center justify-content-center h-100"><img src="" class="img-fluid"
-                alt="image of ">
+          <div class="col-12 col-sm-6 col-lg-4 v-space">
+            <div class="item-card text-center justify-content-center h-100"><img
+                src="https://entertainingwithbeth.com/wp-content/uploads/2017/06/WaffleConeRecipe_Featured.jpg"
+                class="img-fluid" alt="image of waffle cone">
               <h3>Waffle Cone</h3>
               <p>$1.00</p>
               <div class="d-flex btn-contain align-items-end justify-content-center">
@@ -174,9 +191,10 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="item-card text-center justify-content-center h-100"><img src="" class="img-fluid"
-                alt="image of ">
+          <div class="col-12 col-sm-6 col-lg-4 v-space">
+            <div class="item-card text-center justify-content-center h-100"><img
+                src="https://simple-nourished-living.com/wp-content/uploads/2020/07/chocolate-dipped-ice-cream-cones-nuts-sprinkles.jpg"
+                class="img-fluid" alt="image of dipped cone">
               <h3>Dipped Cone</h3>
               <p>$1.00</p>
               <div class="d-flex btn-contain align-items-end justify-content-center">
@@ -184,32 +202,35 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="item-card text-center justify-content-center h-100"><img src="" class="img-fluid"
-                alt="image of ">
+          <div class="col-12 col-sm-6 col-lg-4 v-space">
+            <div class="item-card text-center justify-content-center h-100"><img
+                src="https://i.pinimg.com/originals/5a/ad/27/5aad2759ec2467b2a433e31fbe366143.jpg" class="img-fluid"
+                alt="image of waffle bowl">
               <h3>Waffle Bowl</h3>
-              <p>$1.00</p>
+              <p>$1.25</p>
               <div class="d-flex btn-contain align-items-end justify-content-center">
                 <button onclick="addItem('Waffle Bowl', 'container')" class="btn btn-primary">Add to Order</button>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="item-card text-center justify-content-center h-100"><img src="" class="img-fluid"
-                alt="image of ">
+          <div class="col-12 col-sm-6 col-lg-4 v-space">
+            <div class="item-card text-center justify-content-center h-100"><img
+                src="https://i.pinimg.com/originals/73/ec/1b/73ec1bac207f5ca5e8d15e45d5a906fd.jpg" class="img-fluid"
+                alt="image of dipped waffle bowl">
               <h3>Dipped Waffle Bowl</h3>
-              <p>$1.00</p>
+              <p>$1.50</p>
               <div class="d-flex btn-contain align-items-end justify-content-center">
                 <button onclick="addItem('Dipped Waffle Bowl', 'container')" class="btn btn-primary">Add to
                   Order</button>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-4">
-            <div class="item-card text-center justify-content-center h-100"><img src="" class="img-fluid"
-                alt="image of ">
+          <div class="col-12 col-sm-6 col-lg-4 v-space">
+            <div class="item-card text-center justify-content-center h-100"><img
+                src="https://cdn.shopify.com/s/files/1/1329/2645/products/1_99c76556-da1e-4a7a-b3e5-c2b8e7a58ee8_1024x1024.jpg?v=1466022732"
+                class="img-fluid" alt="image of cup">
               <h3>Cup</h3>
-              <p>$1.00</p>
+              <p>$0.50</p>
               <div class="d-flex btn-contain align-items-end justify-content-center">
                 <button onclick="addItem('Cup', 'container')" class="btn btn-primary">Add to Order</button>
               </div>
@@ -218,8 +239,8 @@
         </section>
       </div>
       <!-- SECTION Cart -->
-      <div class="col-md-6">
-        <div class="item-card">
+      <div class="col-md-4">
+        <div class="item-card sticky-top">
           <h1>Order</h1>
           <div id="orderItems">
             <!-- NOTE This is where new items are added -->
