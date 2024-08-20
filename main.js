@@ -20,18 +20,30 @@ const iceCream = [
 ]
 
 function addItem(selectedItem, selectedType) {
-  let itemAdded = null
   for (let i = 0; i < iceCream.length; i++) {
-    itemAdded = iceCream[i];
-
+    let itemAdded = iceCream[i];
+    if (itemAdded.name == selectedItem) {
+      itemAdded.quantity++;
+      break;
+    }
   }
-  drawOrder()
+
+
+  drawOrder(selectedType)
 }
 
 function calcTotal() {
 
 }
 
-function drawOrder() {
+function drawOrder(selectedType) {
+  // for (let i = 0; i < iceCream.length; i++) {
+  //   if (selectedType == "scoop") {
 
+  //   } else if (selectedType == "topping") {
+
+  //   } else {
+
+  //   }
+  // }
 }
