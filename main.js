@@ -18,3 +18,20 @@ const iceCream = [
   { name: "Dipped Waffle Bowl", price: 1.50, quantity: 0, type: 'container' },
   { name: "Cup", price: 0.50, quantity: 0, type: 'container' }
 ]
+
+function addItem(selectedItem, selectedType) {
+  let itemAdded = null
+  for (let i = 0; i < iceCream.length; i++) {
+    itemAdded = iceCream[i];
+
+  }
+  drawOrder()
+}
+
+function calcTotal() {
+
+}
+
+function drawOrder() {
+
+}
